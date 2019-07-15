@@ -60,7 +60,7 @@ A pre-configured version of the scripts have been installed on the HPC under `/h
 
 ## 6) Example
 
-Download the L526401A paired-end testset using the `download_virusseq_resources.sh` script and run the pipeline as described in section 3) in paired-end mode without skipping hg19 alignment.  
+Download the L526401A paired-end testset using the `download_virusseq_resources.sh` script and run the pipeline in paired-end mode without skipping hg19 alignment as descriped in section <b>3)</b>.  
 
 
 
