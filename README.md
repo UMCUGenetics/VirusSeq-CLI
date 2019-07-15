@@ -42,8 +42,7 @@ In case you want to provide <b>paired-end</b> Illumina reads call the script as 
 `sh virusseq.sh -f L526401A_1.fq.gz -r L526401A_2.fq.gz -o /tmp/output_virseq -n 14`
 
 You can provide unmapped reads directly (i.e RNASeq STAR's out.mate1/mate2) by appending the `-s` flag to the end of your command. This will <b>skip</b> Mosaik's internal hg19 alignment and map the reads directly to the virus reference genome.  
-On a system with 14 CPU cores and 30GB RAM, it will take around 3h to process the sample reads provided by the author. 
-
+On a system with 14 CPU cores and 30GB RAM, it will take around 3h to process the L526401A sample dataset. Skipping hg19 alignment will likely reduce the runtime by half. 
 
 ### Single-end example (gibVirus)
 
