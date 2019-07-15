@@ -1,11 +1,10 @@
 #### CONFIG #####
 
-JUMPDB_PATH=/hpc/cog_bioinf/cuppen/personal_data/inijman/HUB_virusSeq/virusSeq/Mosaik_JumpDb
-MOSAIK_path=/hpc/cog_bioinf/cuppen/personal_data/inijman/HUB_virusSeq/virusSeq/Mosaik
-PERL_path=/hpc/cog_bioinf/cuppen/personal_data/inijman/HUB_virusSeq/virusSeq/scripts
+JUMPDB_PATH=/hpc/cog_bioinf/GENOMES/MOSAIK/jumpDB
+MOSAIK_path=/hpc/cog_bioinf/GENOMES/MOSAIK/Mosaik
+PERL_path=/hpc/cog_bioinf/GENOMES/MOSAIK/scripts
 
 ### END CONFIG #####
-
 
 
 #### USER DEFINED INPUTS ####
