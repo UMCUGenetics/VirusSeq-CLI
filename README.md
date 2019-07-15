@@ -1,6 +1,6 @@
 # VirusSeq CLI User Guide
 
-##Introduction
+## Introduction
 
 This guide provides a short introduction to VirusSeq CLI, a wrapper tool for the VirusSeqPipeline. For more information on the pipeline itself, consider the [VirusSeq] (https://www.ncbi.nlm.nih.gov/pubmed/23162058) paper and [GitHub] (https://github.com/rosericazondekon/virusSeqPipeline) repository.   
 
@@ -12,7 +12,7 @@ Please <b>DO NOT</b> use any other Mosaik binaries, except the one provided in t
 
 ## 2) Reference configuration
 
-Navigate to the `virusseq.config` file and set the correct paths.
+Navigate to the `virusseq.sh` file and set the correct paths in de ### CONFIG ### section.
 
 `JUMPDB_PATH` - Directory containing your jumpDB/reference resources build in <b>1)</b>. <br>
 `MOSAIK_PATH` - Path to the MOSAIK binary. <br>
