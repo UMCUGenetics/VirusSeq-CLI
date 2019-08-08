@@ -14,7 +14,7 @@ FQ2=/hpc/cog_bioinf/ubec/analyses/custom/HUB_virusseq/fastq/L526401A_2.fq.gz
 OUT=/hpc/cog_bioinf/ubec/analyses/custom/HUB_virusseq/test2
 
 #Example. PE/SE without skipping hg19 alignment
-#sh sub/virusseq.sh -f $FQ1 -r $FQ2 -n 14 -o $OUT 
+sh sub/virusseq.sh -f $FQ1 -r $FQ2 -n 14 -o $OUT 
 #sh sub/virusseq.sh -f $FQ1 -n 14 -o $OUT 
 
 #Example. PE/SE with skipping hg19 alignment
