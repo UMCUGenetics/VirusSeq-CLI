@@ -10,18 +10,7 @@ Setup the reference and annotation files using the `jump_file_builder.sh` script
 
 Please <b>DO NOT</b> use any other Mosaik binaries, except the one provided in the GitHub repository by the Author (Mosaik_bin). The pipeline is likely to break with versions different from <b>0.9.891.</b>
 
-## 2) Reference configuration
-
-Navigate to the `virusseq.sh` file and set the correct paths in de ### CONFIG ### section.
-
-`JUMPDB_PATH` - Directory containing your jumpDB/reference resources build in <b>1)</b>. <br>
-`MOSAIK_PATH` - Path to the MOSAIK binary. <br>
-`PERL_PATH` - Path to virusSeq Perl scripts folder (VirusSeq_Detection.pl, VirusSeq_Integration.pl).
-
-
-This has to be done only once before using the script. Do not edit anything else.
-
-## 3) Basic usage   
+## 2) Basic usage   
 
 The VirusSeq CLI script support 4 different run modes depending on your submission parameters. 
 
@@ -29,6 +18,7 @@ The VirusSeq CLI script support 4 different run modes depending on your submissi
 `-f` Forward read <br>
 `-r` Reverse read (optional) <br>
 `-l` Reference library (optional, default gibVirus)  <br>
+`-g` Resource location root folder (setup in step 1)  <br>
 `-o` Path to output folder <br>
 `-n` Number of CPU cores to use (the more the merrier) <br>
 `-s` Indicates if hg19 alignment should be skipped. (optional)
