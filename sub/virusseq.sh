@@ -1,14 +1,6 @@
-#### CONFIG #####
-
-JUMPDB_PATH=/hpc/cog_bioinf/GENOMES/MOSAIK/jumpDB
-MOSAIK_path=/hpc/cog_bioinf/GENOMES/MOSAIK/Mosaik
-PERL_path=/hpc/cog_bioinf/GENOMES/MOSAIK/scripts
-
-### END CONFIG #####
-
 
 #### USER DEFINED INPUTS ####
-echo "Usage : virusseq -f fw_read  -r reverse_read (optional) -l Reference library (optional, default gibVirus) -o Output dir -n number of CPU cores (optional, default 1) -s skip hg19 alignment"
+echo "Usage : virusseq -f fw_read  -r reverse_read (optional) -l Reference library (optional, default gibVirus) -g (Refrence dir) -o Output dir -n number of CPU cores (optional, default 1) -s skip hg19 alignment"
 
 REF_LIB=gibVirus #Default option
 OUT_DIR=.
@@ -18,7 +10,7 @@ NCORES=1
 SKIP=0
 
 # Display user options
-while getopts ":f:r:l:o:n:s" options; do
+while getopts ":f:r:l:o:n:g:s" options; do
     case "${options}" in
         f)
             R1_fq=${OPTARG}
@@ -37,7 +29,9 @@ while getopts ":f:r:l:o:n:s" options; do
         n)	
            NCORES=${OPTARG}
            ;;
-        
+	g)
+           GENOME=${OPTARG}
+           ;;
         s)
            SKIP=${OPTARG}
 	   SKIP=1
@@ -62,6 +56,13 @@ then
 fi
 
 ### #############
+
+JUMPDB_PATH=${GENOME}/jumpDB
+MOSAIK_path=${GENOME}/Mosaik
+PERL_path=${GENOME}/scripts
+
+### END CONFIG #####
+
 
 #Extract basename from R1.fastq
 SAMPLE=$(basename "$R1_fq" | cut -d. -f1)
